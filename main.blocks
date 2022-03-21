@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="cxf#Tb*!!fd0*XuXt5@H">速度</variable></variables><block type="device_button_event" id="(T-sDMZsdg[}.fU;W37Z" x="0" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="function_call" id="VmguUFi!hIt_^MD5/Dx@"><mutation name="电子骰子显示" functionid="?p~/}k1Ntc:dk/(fs]:$"><arg name="数字" id="Ab,tqbJ~8xR?;m}R-Ih+" type="number"/></mutation><value name="Ab,tqbJ~8xR?;m}R-Ih+"><shadow type="math_number" id="~?M?)#KiJLCq~%HS!EQR"><field name="NUM">1</field></shadow><block type="device_random" id="c7j0|zKf_LMtydcjdZgl"><value name="min"><shadow type="math_number" id="{e~#ztc,~|,tUzP*~sPU"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number" id="_s,UxoKw7/pPa1L):Ayy"><field name="NUM">6</field></shadow></value></block></value></block></statement></block><block type="function_definition" id="/`OLtUQ]_G^25u_Bj}%q" x="826" y="6"><mutation name="电子骰子显示" functionid="?p~/}k1Ntc:dk/(fs]:$"><arg name="数字" id="Ab,tqbJ~8xR?;m}R-Ih+" type="number"/></mutation><field name="function_name">电子骰子显示</field><statement name="STACK"><block type="controls_if" id="mNh83^II+^3dvgKrBO(9"><mutation elseif="4" else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="?FqfEm2|7kUP|z_tGOVK"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="dtW.7Z9)s1WL1kch4sN7"><field name="VALUE">数字</field></block></value><value name="B"><shadow type="math_number" id="l?Amu_H%M.BZGw~Yfz|o"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="function_call" id="d_.nDT)mN[tJ-jwHP}ru"><mutation name="显示1" functionid="^wnL,.5g,voqY+D:Ql$z"/></block></statement><value name="IF1"><block type="logic_compare" id="o}?*ocLNNFEKk#6LK||2"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="S}zVj*+!aPaLkuF7PZ#M"><field name="VALUE">数字</field></block></value><value name="B"><shadow type="math_number" id="Ex`2Ym3J2mU,Z@Ty~1u!"><field name="NUM">2</field></shadow></value></block></value><statement name="DO1"><block type="function_call" id="tcL{#xRG*quy;*x_YS1d"><mutation name="显示2" functionid="62M]$!9_g@0h/V(YgLtE"/></block></statement><value name="IF2"><block type="logic_compare" id="4;2uKo$dg=}|DD^pJJCJ"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="b==Zr.-6DC[*~9*JeP=L"><field name="VALUE">数字</field></block></value><value name="B"><shadow type="math_number" id="]JVa9#2U%9Umk{gHUl(z"><field name="NUM">3</field></shadow></value></block></value><statement name="DO2"><block type="function_call" id="u+fN.5On1e|L8A=(Bx2w"><mutation name="显示3" functionid="f+26%w5sl5iZ,YDJwJAW"/></block></statement><value name="IF3"><block type="logic_compare" id=")vWf#K/)4HRcK,*B8eW?"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="p,6Lu|R|/}DMJdX%IkDd"><field name="VALUE">数字</field></block></value><value name="B"><shadow type="math_number" id="?R`Ejc0ieDqte*JB;.ew"><field name="NUM">4</field></shadow></value></block></value><statement name="DO3"><block type="function_call" id="?@w~q3gAK`MF*2_/nBs$"><mutation name="显示4" functionid="6`a`=^8+wj(C[s2$@fG."/></block></statement><value name="IF4"><block type="logic_compare" id="a4aX/1B%LC-BE[^R1h*~"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="nEBCL#Bp;9O6|dNdk;sc"><field name="VALUE">数字</field></block></value><value name="B"><shadow type="math_number" id="`KP|g{J2%e:L4hT3R![a"><field name="NUM">5</field></shadow></value></block></value><statement name="DO4"><block type="function_call" id="U*IK)Fb:Wi=JRybk3J@h"><mutation name="显示5" functionid="zTpcLPN3PY^_I/ez?$Ug"/></block></statement><statement name="ELSE"><block type="function_call" id="=o){x]`q27Z2@JS8fIJp"><mutation name="显示6" functionid="4B+PsS;nFy-kG!?4D+ch"/></block></statement><next><block type="device_pause" id="M(k/bv4Us09N^q[BtOuv"><value name="pause"><shadow type="timePicker" id="1?aCJK;z4WVvoZS0Fs;Z"><field name="ms">3000</field></shadow></value><next><block type="device_clear_display" id="OyHl?mknE^]hQR4Z|ZAA"/></next></block></next></block></statement></block><block type="function_definition" id="-fP{2M$P|*n#aP`G]qO;" x="-11" y="281"><mutation name="显示1" functionid="^wnL,.5g,voqY+D:Ql$z"/><field name="function_name">显示1</field><statement name="STACK"><block type="device_show_leds" id="PriDHr~ZP8U32;gz{7%]"><field name="LEDS">`
+        . . . . . 
+        . . # . . 
+        . # # # . 
+        . . # . . 
+        . . . . .
+        `</field></block></statement></block><block type="function_definition" id="QuWVqSI?bwLDkJF)0-yK" x="263" y="287"><mutation name="显示2" functionid="62M]$!9_g@0h/V(YgLtE"/><field name="function_name">显示2</field><statement name="STACK"><block type="device_show_leds" id="L$~m0/2t3($]AiP:nAU)"><field name="LEDS">`
+        . . . . # 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . . . .
+        `</field></block></statement></block><block type="function_definition" id="i.Mfh?N_;UNn?!`:M!Do" x="538" y="286"><mutation name="显示3" functionid="f+26%w5sl5iZ,YDJwJAW"/><field name="function_name">显示3</field><statement name="STACK"><block type="device_show_leds" id="i6e}VWbzY:N6gs}-*y,?"><field name="LEDS">`
+        . . . . # 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        # . . . .
+        `</field></block></statement></block><block type="function_definition" id="LZ%PSY?r@S^BZXhB1]O7" x="0" y="778"><mutation name="显示4" functionid="6`a`=^8+wj(C[s2$@fG."/><field name="function_name">显示4</field><statement name="STACK"><block type="device_show_leds" id="nIc;f[[X%~]f854,Z-R3"><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . . . #
+        `</field></block></statement></block><block type="function_definition" id="t{S;z{SxTya/dy%fc|?m" x="277" y="777"><mutation name="显示5" functionid="zTpcLPN3PY^_I/ez?$Ug"/><field name="function_name">显示5</field><statement name="STACK"><block type="device_show_leds" id="G]k(g{z@zPkl!Ud%Rqzj"><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        # . . . #
+        `</field></block></statement></block><block type="function_definition" id="`x=!:U!}*mbu/%;PU=3u" x="543" y="777"><mutation name="显示6" functionid="4B+PsS;nFy-kG!?4D+ch"/><field name="function_name">显示6</field><statement name="STACK"><block type="device_show_leds" id="WJ,F5^LUlY=P.*oZ}H0="><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        # . . . # 
+        . . . . . 
+        # . . . #
+        `</field></block></statement></block></xml>
